@@ -1,5 +1,12 @@
 # HelloWorld.Doublets.DotNet
-A quick start example that shows how to create a first link using Platform.Data.Doublets package:
+
+A quick start example that shows how to create a first link using Platform.Data.Doublets package.
+
+## Prerequisites
+* Linux, macOS or Windows
+* [.NET Core](https://dotnet.microsoft.com/download) 2.2 and above
+
+## [The code](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
 
 ```C#
 using System;
