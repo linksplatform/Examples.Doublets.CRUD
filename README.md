@@ -1,4 +1,4 @@
-# HelloWorld.Doublets.DotNet
+# HelloWorld.Doublets.DotNet ([русская версия](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.ru.md))
 
 A quick start example that shows how to create a first [link](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) using [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets) package.
 
