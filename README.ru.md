@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/linksplatform/HelloWorld.Doublets.DotNet.svg?branch=master)](https://travis-ci.com/linksplatform/HelloWorld.Doublets.DotNet)
+
 # HelloWorld.Doublets.DotNet ([english version](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.md))
 
 Пример, который показывает как создать первую [связь](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) с помощью пакета [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets).
