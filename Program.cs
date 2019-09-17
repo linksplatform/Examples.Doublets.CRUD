@@ -14,6 +14,7 @@ namespace HelloWorld.Doublets.DotNet
                 link = links.Update(link, link, link);
                 Console.WriteLine("Hello World!");
                 Console.WriteLine($"This is my first link: ({link}:{links.GetSource(link)}->{links.GetTarget(link)}).");
+                links.Delete(link);
             }
         }
     }
