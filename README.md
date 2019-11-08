@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/linksplatform/HelloWorld.Doublets.DotNet.svg?branch=master)](https://travis-ci.com/linksplatform/HelloWorld.Doublets.DotNet)
+[![Actions Status](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/workflows/CI/badge.svg)](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/actions?workflow=CI)
 
 # HelloWorld.Doublets.DotNet ([русская версия](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.ru.md))
 
