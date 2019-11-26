@@ -37,3 +37,7 @@ namespace HelloWorld.Doublets.DotNet
   }
 }
 ```
+
+## Ищите что-то посложнее?
+* [Сравнение между SQLite и Дуплетами](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
+
