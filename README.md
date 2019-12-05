@@ -38,6 +38,6 @@ namespace HelloWorld.Doublets.DotNet
 }
 ```
 
-## Looking something more complex?
+## Looking for something more complex?
 * [Comparison between SQLite and Doublets](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
 * [Search engine with its web crawler, that stores web-pages in the Doublets](https://github.com/linksplatform/Crawler)
