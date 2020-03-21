@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Data.Doublets" Version="0.6.4" />
+    <PackageReference Include="Platform.Data.Doublets" Version="0.6.5" />
   </ItemGroup>
 
 </Project>
