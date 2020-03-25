@@ -36,7 +36,6 @@ namespace HelloWorld.Doublets.DotNet
         }
     }
 }
-
 ```
 
 ## Looking for something more complex?
