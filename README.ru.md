@@ -2,12 +2,12 @@
 
 # HelloWorld.Doublets.DotNet ([english version](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.md))
 
-Пример, который показывает как создать, обновить и удалить первую [связь](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) с помощью NuGet пакета [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets).
+Пример, который показывает как создать, обновить и удалить первую [связь](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) с помощью [Дуплетов](https://github.com/linksplatform/Data.Doublets).
 
 ## Для запуска требуется
 * Linux, macOS или Windows
 * [.NET Core](https://dotnet.microsoft.com/download) 2.2 или выше
-* [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet пакет с версией 0.6.0 или выше
+* NuGet пакет [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) с версией 0.6.0 или выше
 
 ## [Код](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
 
