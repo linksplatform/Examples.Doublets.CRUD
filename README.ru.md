@@ -7,7 +7,7 @@
 ## Для запуска требуется
 * Linux, macOS или Windows
 * [.NET Core](https://dotnet.microsoft.com/download) 2.2 или выше
-* [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet пакет с версией 0.0.1 или выше
+* [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet пакет с версией 0.6.0 или выше
 
 ## [Код](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
 
