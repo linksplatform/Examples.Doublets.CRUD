@@ -38,6 +38,6 @@ namespace HelloWorld.Doublets.DotNet
 }
 ```
 
-## Ищите что-то посложнее?
+## Ищите что-то интереснее?
 * [Сравнение между SQLite и Дуплетами](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
 * [Поисковый движок со встроенным поисковым роботом, который хранит веб-страницы в Дуплетах](https://github.com/linksplatform/Crawler)
