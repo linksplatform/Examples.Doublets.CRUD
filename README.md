@@ -6,7 +6,7 @@ A quick start example that shows how to create, update and delete the first [lin
 
 ## Prerequisites
 * Linux, macOS or Windows
-* [.NET Core](https://dotnet.microsoft.com/download) 2.2 or above
+* [.NET Core 2.2+ or .NET 5+](https://dotnet.microsoft.com/download)
 * [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet package with 0.6.0 or above
 
 ## [The code](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
