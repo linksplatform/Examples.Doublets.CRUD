@@ -19,8 +19,8 @@ Console.WriteLine($"The number of links in the the data store is {links.Count()}
 Console.WriteLine("Data store contents:");
 var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
 links.Each((link) => {
-	Console.WriteLine($"{links.Format(link)}");
-	return links.Constants.Continue;
+    Console.WriteLine($"{links.Format(link)}");
+    return links.Constants.Continue;
 }, query);
 
 // The link's content reset:
