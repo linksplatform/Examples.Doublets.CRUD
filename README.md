@@ -28,8 +28,13 @@ namespace HelloWorld.Doublets.DotNet
                 var link = links.Create();
                 link = links.Update(link, link, link);
                 Console.WriteLine("Hello World!");
-                Console.WriteLine($"This is my first link: {links.Format(link)}");
-                Console.WriteLine($"Total links in the storage: {links.Count()}.");
+                Console.WriteLine($"The number of links in the the data store is {links.Count()}.");
+                Console.WriteLine("Data store contents:");
+                var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
+                links.Each((link) => {
+                    Console.WriteLine($"{links.Format(link)}");
+                    return links.Constants.Continue;
+                }, query);
                 link = links.Update(link, default, default);
                 links.Delete(link);
             }
