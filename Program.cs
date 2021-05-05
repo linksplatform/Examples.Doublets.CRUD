@@ -3,6 +3,7 @@ using Platform.Data;
 using Platform.Data.Doublets;
 using Platform.Data.Doublets.Memory.United.Generic;
 
+// A doublet links store is mapped to "db.links" file:
 using var links = new UnitedMemoryLinks<uint>("db.links");
 
 Console.WriteLine("Hello World!");
