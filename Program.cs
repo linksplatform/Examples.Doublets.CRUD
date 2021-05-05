@@ -14,12 +14,12 @@ namespace HelloWorld.Doublets.DotNet
                 var link = links.Create();
                 link = links.Update(link, link, link);
                 Console.WriteLine("Hello World!");
-				Console.WriteLine($"The number of links in the the data store is {links.Count()}.");
+                Console.WriteLine($"The number of links in the the data store is {links.Count()}.");
                 Console.WriteLine("Data store contents:");
-				var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
+                var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
                 links.Each((link) => {
                     Console.WriteLine($"{links.Format(link)}");
-					return links.Constants.Continue;
+                    return links.Constants.Continue;
                 }, query);
                 link = links.Update(link, default, default);
                 links.Delete(link);
