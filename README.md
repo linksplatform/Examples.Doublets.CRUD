@@ -44,7 +44,7 @@ link = links.Update(link, default, default);
 links.Delete(link);
 ```
 
-Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look for [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
+Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look at [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
 
 ## Looking for something more interesting?
 * [Comparison between SQLite and Doublets](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
