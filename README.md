@@ -17,30 +17,31 @@ using Platform.Data;
 using Platform.Data.Doublets;
 using Platform.Data.Doublets.Memory.United.Generic;
 
-namespace HelloWorld.Doublets.DotNet
-{
-    class Program
-    {
-        static void Main()
-        {
-            using (var links = new UnitedMemoryLinks<uint>("db.links"))
-            {
-                var link = links.Create();
-                link = links.Update(link, link, link);
-                Console.WriteLine("Hello World!");
-                Console.WriteLine($"The number of links in the the data store is {links.Count()}.");
-                Console.WriteLine("Data store contents:");
-                var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
-                links.Each((link) => {
-                    Console.WriteLine($"{links.Format(link)}");
-                    return links.Constants.Continue;
-                }, query);
-                link = links.Update(link, default, default);
-                links.Delete(link);
-            }
-        }
-    }
-}
+// A doublet links store is mapped to "db.links" file:
+using var links = new UnitedMemoryLinks<uint>("db.links");
+
+Console.WriteLine("Hello World!");
+
+// A creation of the doublet link: 
+var link = links.Create();
+
+// The link is updated to reference itself twice (as a source and a target):
+link = links.Update(link, link, link);
+
+// Read operations:
+Console.WriteLine($"The number of links in the the data store is {links.Count()}.");
+Console.WriteLine("Data store contents:");
+var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
+links.Each((link) => {
+	Console.WriteLine($"{links.Format(link)}");
+	return links.Constants.Continue;
+}, query);
+
+// The link's content reset:
+link = links.Update(link, default, default);
+
+// The link deletion:
+links.Delete(link);
 ```
 
 Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look for [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
