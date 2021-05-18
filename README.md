@@ -1,6 +1,6 @@
-[![Actions Status](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/workflows/CI/badge.svg)](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/actions?workflow=CI)
+[![Actions Status](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/workflows/CI/badge.svg)](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/actions?workflow=CI)
 
-# HelloWorld.Doublets.DotNet ([русская версия](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.ru.md))
+# Examples.Doublets.CRUD.DotNet ([русская версия](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/README.ru.md))
 
 A quick start example that shows how to create, read, update and delete the first [link](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) using [Doublets](https://github.com/linksplatform/Data.Doublets).
 
@@ -9,7 +9,7 @@ A quick start example that shows how to create, read, update and delete the firs
 * [.NET 5+ or .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet package with 0.6.0 or above
 
-## [The code](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
+## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs)
 
 ```C#
 using System;
