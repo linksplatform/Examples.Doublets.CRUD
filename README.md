@@ -42,6 +42,14 @@ link = links.Update(link, default, default);
 links.Delete(link);
 ```
 
+Expected output is:
+
+```
+The number of links in the the data store is 1.
+Data store contents:
+(1: 1 1)
+```
+
 Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look at [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
 
 ## Looking for something more interesting?
