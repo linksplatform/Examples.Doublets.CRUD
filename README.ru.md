@@ -1,6 +1,6 @@
-[![Состояние сборки](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/workflows/CI/badge.svg)](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/actions?workflow=CI)
+[![Состояние сборки](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/workflows/CI/badge.svg)](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/actions?workflow=CI)
 
-# HelloWorld.Doublets.DotNet ([english version](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/README.md))
+# Examples.Doublets.CRUD.DotNet ([english version](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/README.md))
 
 Пример, который показывает как создать, обновить и удалить первую [связь](https://github.com/Konard/LinksPlatform/wiki/FAQ#what-does-the-link-mean) с помощью [Дуплетов](https://github.com/linksplatform/Data.Doublets).
 
@@ -9,7 +9,7 @@
 * [.NET 5+ или .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * NuGet пакет [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) с версией 0.6.0 или выше
 
-## [Код](https://github.com/linksplatform/HelloWorld.Doublets.DotNet/blob/master/Program.cs)
+## [Код](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs)
 
 ```C#
 using System;
@@ -17,7 +17,7 @@ using Platform.Data;
 using Platform.Data.Doublets;
 using Platform.Data.Doublets.Memory.United.Generic;
 
-namespace HelloWorld.Doublets.DotNet
+namespace Examples.Doublets.CRUD.DotNet
 {
     class Program
     {
