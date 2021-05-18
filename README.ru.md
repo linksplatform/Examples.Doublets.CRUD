@@ -27,7 +27,6 @@ namespace Examples.Doublets.CRUD.DotNet
             {
                 var link = links.Create();
                 link = links.Update(link, link, link);
-                Console.WriteLine("Привет Мир!");
                 Console.WriteLine($"Это моя первая связь: {links.Format(link)}");
                 Console.WriteLine($"Всего связей в хранилище: {links.Count()}.");
                 link = links.Update(link, default, default);
