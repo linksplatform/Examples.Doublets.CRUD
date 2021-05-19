@@ -24,7 +24,7 @@ using var links = new UnitedMemoryLinks<uint>("db.links");
 var link = links.Create();
 
 // The link is updated to reference itself twice (as a source and a target):
-link = links.Update(link, link, link); // Arguments are: address, new source, new target
+link = links.Update(link, link, link); // Arguments are: updated address, new source, new target
 
 // Read operations:
 Console.WriteLine($"The number of links in the data store is {links.Count()}.");
