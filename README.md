@@ -24,12 +24,13 @@ using var links = new UnitedMemoryLinks<uint>("db.links");
 var link = links.Create();
 
 // The link is updated to reference itself twice (as a source and a target):
-link = links.Update(link, link, link);
+link = links.Update(link, link, link); // Arguments are: address, source, target
 
 // Read operations:
 Console.WriteLine($"The number of links in the data store is {links.Count()}.");
 Console.WriteLine("Data store contents:");
-var query = new Link<uint>(links.Constants.Any, links.Constants.Any, links.Constants.Any);
+var any = links.Constants.Any; // Means any link address or no restriction on link address
+var query = new Link<uint>(any, any, any); // Arguments are: address, source, target
 links.Each((link) => {
     Console.WriteLine(links.Format(link));
     return links.Constants.Continue;
