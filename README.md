@@ -44,7 +44,7 @@ link = links.Update(link, default, default);
 links.Delete(link);
 ```
 
-Expected output is:
+The expected output is:
 
 ```
 The number of links in the the data store is 1.
