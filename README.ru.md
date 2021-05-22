@@ -43,7 +43,7 @@ link = links.Update(link, newSource: default, newTarget: default);
 // Удаление связи:
 links.Delete(link);
 ```
-Ожидаемый вывод:
+[Ожидаемый вывод](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/runs/2646250538#step:3:4):
 
 ```
 Количество связей в хранилище данных: 1.
