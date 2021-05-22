@@ -20,7 +20,7 @@ using Platform.Data.Doublets.Memory.United.Generic;
 // Хранилище дуплетов привязывается к файлу "db.links":
 using var links = new UnitedMemoryLinks<uint>("db.links");
 
-// Создания связи-дуплета: 
+// Создание связи-дуплета: 
 var link = links.Create();
 
 // Связь обновляется чтобы ссылаться на себя дважды (в качестве начала и конца):
