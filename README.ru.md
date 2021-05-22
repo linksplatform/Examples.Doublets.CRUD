@@ -2,7 +2,7 @@
 
 # Examples.Doublets.CRUD.DotNet ([english version](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/README.md))
 
-Пример, для быстрого старта, который показывает как создать, прочитать, обновить и удалить первую [связь](https://github.com/Konard/LinksPlatform/wiki/%D0%A7%D0%90%D0%92%D0%9E#%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B2%D1%8F%D0%B7%D1%8C) используя [Дуплеты](https://github.com/linksplatform/Data.Doublets).
+Пример для быстрого старта, который показывает как создать, прочитать, обновить и удалить первую [связь](https://github.com/Konard/LinksPlatform/wiki/%D0%A7%D0%90%D0%92%D0%9E#%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B2%D1%8F%D0%B7%D1%8C) используя [Дуплеты](https://github.com/linksplatform/Data.Doublets).
 
 ## Для запуска требуется
 * Linux, macOS или Windows
