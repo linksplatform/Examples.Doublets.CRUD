@@ -44,7 +44,7 @@ link = links.Update(link, newSource: default, newTarget: default);
 links.Delete(link);
 ```
 
-Expected output is:
+[Expected output](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/runs/2646250538#step:3:4) is:
 
 ```
 The number of links in the the data store is 1.
