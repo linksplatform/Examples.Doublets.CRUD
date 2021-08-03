@@ -57,3 +57,7 @@ Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look at [ILi
 ## Looking for something more interesting?
 * [Comparison between SQLite and Doublets](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
 * [Search engine with its web crawler, that stores web-pages in the Doublets](https://github.com/linksplatform/Crawler)
+* [GraphQL server that uses Doublets as the database behind the universal API](https://github.com/linksplatform/Data.Doublets.GraphQL)
+* [GitHub bot that uses Doublets as the dababase for file templates](https://github.com/linksplatform/Bot)
+* [JSON to Doublets importer and Doublets to JSON exporter](https://github.com/linksplatform/Data.Doublets.Json)
+* [XML to Doublets importer and Doublets to XML exporter](https://github.com/linksplatform/Data.Doublets.Xml)
