@@ -9,7 +9,7 @@ A quick start example that shows how to create, read, update and delete the firs
 * [.NET 5+ or .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet package with 0.6.0 or above
 
-## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs)
+## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs) [Run at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0)
 
 ```C#
 using System;
@@ -52,7 +52,7 @@ Data store contents:
 (1: 1 1)
 ```
 
-Run [this example at .NET fiddle](https://dotnetfiddle.net/Y7Zvt0). Look at [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
+Look at [ILinks\<TLinkAddress\> documentation](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) for more details.
 
 ## Looking for something more interesting?
 * [Comparison between SQLite and Doublets](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
