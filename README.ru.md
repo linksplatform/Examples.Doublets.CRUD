@@ -9,7 +9,7 @@
 * [.NET 5+ или .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * NuGet пакет [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) с версией 0.6.0 или выше
 
-## [Код](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs)
+## [Код](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs) | [Запустить .NET fiddle](https://dotnetfiddle.net/Y7Zvt0)
 
 ```C#
 using System;
@@ -51,7 +51,7 @@ links.Delete(link);
 (1: 1 1)
 ```
 
-Запустите [этот пример в .NET fiddle](https://dotnetfiddle.net/8J5BQS). Посмотрите [документацию по ILinks\<TLinkAddress\>](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) чтобы изучить подробности.
+Посмотрите [документацию по ILinks\<TLinkAddress\>](https://linksplatform.github.io/Data/csharp/api/Platform.Data.ILinks-2.html) чтобы изучить подробности.
 
 ## Ищите что-то интереснее?
 * [Сравнение между SQLite и Дуплетами](https://github.com/linksplatform/Comparisons.SQLiteVSDoublets)
