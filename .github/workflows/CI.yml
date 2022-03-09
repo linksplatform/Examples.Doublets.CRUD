@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run
-      run: dotnet run --configuration Release
+      run: dotnet run --configuration Release --project csharp/
