@@ -9,7 +9,7 @@
 * [.NET 5+ или .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * NuGet пакет [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) с версией 0.6.0 или выше
 
-## [Код](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/Program.cs) | [Запустить .NET fiddle](https://dotnetfiddle.net/Y7Zvt0)
+## [Код](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/csharp/Program.cs) | [Запустить .NET fiddle](https://dotnetfiddle.net/Y7Zvt0)
 
 ```C#
 using System;
