@@ -30,7 +30,7 @@ link = links.Update(link, link, link); // The passed arguments are: an updated a
 Console.WriteLine($"The number of links in the data store is {links.Count()}.");
 Console.WriteLine("Data store contents:");
 // The arguments of a query are restrictions: on address, on source, on target
-var any = links.Constants.Any; // "Links.Constants.Any" means that the query (in our example) doesn't recieve any link address restriction
+var any = links.Constants.Any; // Means that there is no restriction on link address
 var query = new Link<uint>(any, any, any); 
 links.Each((link) => {
     Console.WriteLine(links.Format(link));
