@@ -9,7 +9,7 @@ A quick start example that shows how to create, read, update and delete the firs
 * [.NET 5+ or .NET Core 2.2+](https://dotnet.microsoft.com/download)
 * [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet package with 0.6.0 or above
 
-## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/csharp/Program.cs) | [Run .NET fiddle](https://dotnetfiddle.net/Y7Zvt0)
+## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/csharp/Program.cs) | [Run .NET fiddle](https://dotnetfiddle.net/ERHBKA)
 
 ```C#
 using System;
