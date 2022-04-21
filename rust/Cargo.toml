@@ -1,0 +1,10 @@
+[package]
+name = "crud"
+edition = "2021"
+version = "0.1.0"
+authors = ["uselessgoddess"]
+
+[dependencies]
+doublets = "0.1.0-alpha.11"
+platform-mem = "0.1.0-alpha.2"
+platform-data = "0.1.0-aplha.0"
