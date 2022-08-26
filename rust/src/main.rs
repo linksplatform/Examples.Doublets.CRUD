@@ -1,29 +1,27 @@
-use doublets::mem::united::Store;
-use doublets::Doublets;
-use platform_data::Flow::Continue;
-use platform_mem::FileMappedMem;
-use std::error::Error;
-use std::fs::File;
+use doublets::{data, mem, unit, Doublets, DoubletsExt, Links};
 
-fn main() -> Result<(), Box<dyn Error>> {
-    let mem = FileMappedMem::new(
-        File::options()
-            .create(true)
-            .read(true)
-            .write(true)
-            .open("db.links")?,
-    )?;
-    let mut links = Store::<u64, _>::new(mem)?;
+fn main() -> Result<(), doublets::Error<usize>> {
+    // use file as memory for doublets
+    let mem = mem::FileMapped::from_path("db.links")?;
+    let mut store = unit::Store::<usize, _>::new(mem)?;
 
-    let link = links.create()?;
-    let link = links.update(link, link, link)?;
+    // create 1: 1 1 - it's point: link where source and target it self
+    let point = store.create_link(1, 1)?;
 
-    let any = links.constants().any;
-    links.try_each_by([any, any, any], |link| {
-        println!("{}", link);
-        Continue
+    // `any` constant denotes any link
+    let any = store.constants().any;
+
+    // print all store from store where (index: any, source: any, target: any)
+    store.each_iter([any, any, any]).for_each(|link| {
+        println!("{link:?}");
     });
 
-    links.delete(link)?;
-    Ok(())
+    // delete point with handler (Link, Link)
+    store
+        .delete_with(point, |before, after| {
+            println!("delete: {before:?} => {after:?}");
+            // track issue: https://github.com/linksplatform/doublets-rs/issues/4
+            data::Flow::Continue
+        })
+        .map(|_| ())
 }
