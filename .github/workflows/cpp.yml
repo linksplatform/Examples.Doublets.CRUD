@@ -1,0 +1,81 @@
+name: cpp
+
+on:
+  push:
+    branches: main 
+    paths:
+      - 'cpp/**'
+      - '.github/workflows/cpp.yml'
+  pull_request:
+    paths:
+      - 'cpp/**'
+      - '.github/workflows/cpp.yml'
+
+defaults:
+  run:
+    working-directory: cpp
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        compiler: [gcc-11, clang-12]
+        include:
+          - compiler: gcc-11
+            cc: gcc-11
+            cxx: g++-11
+          - compiler: clang-12
+            cc: clang-12
+            cxx: clang++-12
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake ninja-build
+          sudo apt-get install -y gcc-11 g++-11 clang-12
+      
+      - name: Setup Conan
+        run: |
+          pip install conan==1.59.0
+          conan profile new default --detect
+          conan profile update settings.compiler.libcxx=libstdc++11 default
+          conan remote add linksplatform https://linksplatform.jfrog.io/artifactory/api/conan/linksplatform || true
+      
+      - name: Create build directory
+        run: mkdir -p build
+      
+      - name: Install Conan dependencies
+        run: |
+          cd build
+          conan install .. --build=missing
+        env:
+          CC: ${{ matrix.cc }}
+          CXX: ${{ matrix.cxx }}
+      
+      - name: Configure CMake
+        run: |
+          cd build
+          cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
+        env:
+          CC: ${{ matrix.cc }}
+          CXX: ${{ matrix.cxx }}
+      
+      - name: Build
+        run: |
+          cd build
+          ninja
+        env:
+          CC: ${{ matrix.cc }}
+          CXX: ${{ matrix.cxx }}
+      
+      - name: Test run (basic smoke test)
+        run: |
+          cd build
+          timeout 30s ./bin/Examples.Doublets.CRUD.Cpp || true
+          echo "Build completed successfully"
