@@ -1,0 +1,14 @@
+[requires]
+platform.interfaces/0.3.7@linksplatform/stable
+platform.collections.methods/0.1.5@linksplatform/stable
+platform.collections/0.0.5@linksplatform/stable
+platform.numbers/0.2.0@linksplatform/stable
+platform.memory/0.5.2@linksplatform/stable
+platform.exceptions/0.4.2@linksplatform/stable
+platform.data/0.4.4@linksplatform/stable
+platform.setters/0.0.4@linksplatform/stable
+platform.ranges/0.1.3@linksplatform/stable
+mio/0.0.1@linksplatform/stable
+
+[generators]
+cmake
