@@ -6,7 +6,7 @@ A quick start example that shows how to create, read, update and delete the firs
 
 ## Prerequisites
 * Linux, macOS or Windows
-* [.NET 5+ or .NET Core 2.2+](https://dotnet.microsoft.com/download)
+* [.NET 8.0+](https://dotnet.microsoft.com/download)
 * [Platform.Data.Doublets](https://www.nuget.org/packages/Platform.Data.Doublets) NuGet package with 0.6.0 or above
 
 ## [The code](https://github.com/linksplatform/Examples.Doublets.CRUD.DotNet/blob/master/csharp/Program.cs) | [Run .NET fiddle](https://dotnetfiddle.net/ERHBKA)
